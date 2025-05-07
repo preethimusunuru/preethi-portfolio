@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';  // Ensure you have the proper CSS for styling
+import './App.css'; 
 
 const App = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -19,7 +19,7 @@ const App = () => {
         <div className="flex flex-col items-center justify-center">
           {/* Profile Image */}
           <img
-            src="/profile-image.jpg" // Change this to your image path if it's different
+            src="/profile-image.jpg" 
             alt="Preethi's Profile"
             className="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-lg"
           />
