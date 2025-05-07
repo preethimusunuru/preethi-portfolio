@@ -26,10 +26,10 @@ const App = () => {
           
           <h1 className="text-4xl font-bold">Preethi Musunuru</h1>
           <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
-          <p className="mt-2 text-lg">
+          <p className="text-xl mt-2">
             <span>📞: </span><a href="tel:+13096126760" className="underline">309-612-6760</a>
           </p>
-          <p className="mt-2 text-lg">
+          <p className="text-xl mt-2">
             <span>✉️: </span><a href="mailto:preethimusunuru@gmail.com" className="underline">preethimusunuru@gmail.com</a>
           </p>
         </div>
