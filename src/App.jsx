@@ -14,7 +14,7 @@ const App = () => {
   };
 
   return (
-    <div className="App bg-gray-100 text-gray-900 font-sans">
+    <div className="App bg-white text-gray-900 font-sans">
       <header className="bg-blue-500 text-white p-6 text-center">
         <div className="flex flex-col items-center justify-center">
           {/* Profile Image */}
