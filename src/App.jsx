@@ -19,10 +19,11 @@ const App = () => {
         <div className="flex flex-col items-center justify-center">
           {/* Profile Image */}
           <img
-            src="/profile-image.jpg" 
-            alt="Preethi's Profile"
-            className="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-lg"
-          />
+  src={`${import.meta.env.BASE_URL}profile-image.jpg`} 
+  alt="Preethi's Profile"
+  className="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-lg"
+/>
+
           <h1 className="text-4xl font-bold">Preethi Musunuru</h1>
           <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
         </div>
