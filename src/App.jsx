@@ -26,10 +26,10 @@ const App = () => {
           
           <h1 className="text-4xl font-bold">Preethi Musunuru</h1>
           <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
-          <p className="text-xl mt-2">
+          <p className="mt-2 text-lg">
             <span>📞: </span><a href="tel:+13096126760" className="underline">309-612-6760</a>
           </p>
-          <p className="text-xl mt-2">
+          <p className="mt-2 text-lg">
             <span>✉️: </span><a href="mailto:preethimusunuru@gmail.com" className="underline">preethimusunuru@gmail.com</a>
           </p>
         </div>
@@ -208,6 +208,24 @@ const App = () => {
                   )}
                 </li>
               ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Resume Section */}
+        <section className="resume my-8">
+          <h2 className="text-3xl font-semibold mb-4">Resume</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <ul className="space-y-4">
+              <li className="text-lg font-medium">
+                <a href="https://drive.google.com/uc?export=download&id=1bLpINpZ7lzYXeIuS91q6F0hPLXw9KM2k" className="underline" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
+              </li>
+              <li className="text-lg font-medium">
+                <a href="https://www.linkedin.com/in/preethimusunuru/" className="underline" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              </li>
+              <li className="text-lg font-medium">
+                <a href="https://github.com/preethimusunuru" className="underline" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+              </li>
             </ul>
           </div>
         </section>
