@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.css';  
 
 const App = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -14,24 +14,18 @@ const App = () => {
   };
 
   return (
-    <div className="App bg-white text-gray-900 font-sans">
+    <div className="App bg-gray-100 text-gray-900 font-sans">
       <header className="bg-blue-500 text-white p-6 text-center">
         <div className="flex flex-col items-center justify-center">
           {/* Profile Image */}
           <img
-            src={`${import.meta.env.BASE_URL}profile-image.jpg`}
-            alt="Preethi's Profile"
-            className="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-lg"
-          />
-          
+  src={`${import.meta.env.BASE_URL}profile-image.jpg`}
+  alt="Preethi's Profile"
+  className="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-lg"
+/>
+
           <h1 className="text-4xl font-bold">Preethi Musunuru</h1>
           <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
-          <p className="mt-2 text-lg">
-            <span>📞: </span><a href="tel:+13096126760" className="underline">309-612-6760</a>
-          </p>
-          <p className="mt-2 text-lg">
-            <span>✉️: </span><a href="mailto:preethimusunuru@gmail.com" className="underline">preethimusunuru@gmail.com</a>
-          </p>
         </div>
       </header>
 
@@ -196,13 +190,13 @@ const App = () => {
               ].map((project, index) => (
                 <li
                   key={index}
-                  className="bg-gray-100 p-4 rounded-lg shadow-sm cursor-pointer"
+                  className="bg-blue-100 p-4 rounded-lg shadow-sm cursor-pointer"
                   onClick={() => handleProjectClick(index)}
                 >
                   <h3 className="text-xl font-medium">{project.title}</h3>
                   <p>{project.description}</p>
                   {selectedProject === index && (
-                    <div className="mt-4 p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <div className="mt-4 p-4 bg-blue-50 rounded-lg shadow-sm">
                       {project.details}
                     </div>
                   )}
@@ -212,30 +206,64 @@ const App = () => {
           </div>
         </section>
 
-        {/* Resume Section */}
-        <section className="resume my-8">
-          <h2 className="text-3xl font-semibold mb-4">Resume</h2>
+        <section className="skills my-8">
+          <h2 className="text-3xl font-semibold mb-4">Skills</h2>
           <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
-            <ul className="space-y-4">
-              <li className="text-lg font-medium">
-                <a href="https://drive.google.com/uc?export=download&id=1bLpINpZ7lzYXeIuS91q6F0hPLXw9KM2k" className="underline" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
-              </li>
-              <li className="text-lg font-medium">
-                <a href="https://www.linkedin.com/in/preethimusunuru/" className="underline" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-              </li>
-              <li className="text-lg font-medium">
-                <a href="https://github.com/preethimusunuru" className="underline" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-              </li>
+            <ul className="list-disc ml-6">
+              <li>JavaScript, TypeScript, Python, Java, C++, Swift</li>
+              <li>ReactJS, AngularJS, Node.js, Spring Boot</li>
+              <li>Cloud Technologies: AWS, Azure, Firebase</li>
+              <li>Mobile App Development: Flutter, Swift</li>
+              <li>Testing Frameworks: Cucumber, Jest, Mocha</li>
+              <li>Version Control: Git, GitHub</li>
             </ul>
+          </div>
+        </section>
+
+        <section className="resume my-8">
+          <h2 className="text-3xl font-semibold mb-4">Download My Resume</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <p>If you'd like to learn more about my experience, feel free to download my resume or view it below.</p>
+            <h3 className="text-xl font-medium mb-2">Resume Preview</h3>
+            <iframe 
+              src="https://asset.cloudinary.com/dg9cntzrg/4cad0d9a4ca4ded64d400fbe6981afa1"
+              width="100%" 
+              height="600px" 
+              title="Preethi's Resume"
+              className="border-2 border-gray-300 rounded-lg"
+            ></iframe>
+            <a
+              href="https://asset.cloudinary.com/dg9cntzrg/4cad0d9a4ca4ded64d400fbe6981afa1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline mt-4 block"
+            >
+              Download My Resume
+            </a>
+          </div>
+        </section>
+
+        <section className="linkedin my-8">
+          <h2 className="text-3xl font-semibold mb-4">Connect with Me on LinkedIn</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <p>If you'd like to connect professionally, feel free to visit my LinkedIn profile!</p>
+            <a
+              href="https://www.linkedin.com/in/preethi-musunuru-289995176/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Visit My LinkedIn Profile
+            </a>
           </div>
         </section>
       </main>
 
-      <footer className="bg-gray-200 text-center py-4">
-        <p className="text-sm text-gray-600">&copy; 2025 Preethi Musunuru. All Rights Reserved.</p>
+      <footer className="bg-blue-500 text-white p-6 text-center">
+        <p>&copy; 2025 Preethi. All rights reserved.</p>
       </footer>
     </div>
   );
-}
+};
 
 export default App;
