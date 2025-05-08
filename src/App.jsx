@@ -26,7 +26,6 @@ const App = () => {
 
           <h1 className="text-4xl font-bold">Preethi Musunuru</h1>
           <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
-          <p className="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
           <p className="mt-2">
             <span role="img" aria-label="phone">📞</span> 309-612-6760 | 
             <span role="img" aria-label="email">📧</span> preethimusunuru@gmail.com
